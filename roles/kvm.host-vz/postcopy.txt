@@ -1,0 +1,4 @@
+# /home/centos/
+guestroot/home/centos/vzctl.sh /home/centos/vzctl.sh mode=755 uid=centos gid=centos
+# /vz/
+guestroot/vz/template/cache/vz.centos6.x86_64.tar.gz /vz/template/cache/vz.centos6.x86_64.tar.gz mode=644
