@@ -94,8 +94,8 @@ function install_ifcfg() {
 ## main
 
 declare ctid=${1:-101}
-declare tmpl=${2:-vz.centos6.$(arch)}
-vzctl create ${ctid} --ostemplate ${tmpl}
+declare tmpl=${2:-centos6}
+vzctl create ${ctid} --ostemplate vz.${tmpl}.$(arch)
 
 vzctl set ${ctid} --netif_add eth0,,,,vzbr0 --save
 vzctl set ${ctid} --nameserver 8.8.8.8      --save
