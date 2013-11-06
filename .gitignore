@@ -1,2 +1,3 @@
 *.raw
 *.pid
+roles/vz.*/vz.*.tar.gz
