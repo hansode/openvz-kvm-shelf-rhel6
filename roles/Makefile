@@ -1,4 +1,4 @@
-VMS=kvm.host-vz vz.centos6 vz.serf
+VMS=kvm.host-vz vz.centos6 vz.serf vz.serf.apache vz.serf.haproxy
 
 all:
 
@@ -9,6 +9,12 @@ vz.centos6:
 	(cd $@ && make)
 
 vz.serf:
+	(cd $@ && make)
+
+vz.serf.apache:
+	(cd $@ && make)
+
+vz.serf.haproxy:
 	(cd $@ && make)
 
 .PHONY: $(VMS)
