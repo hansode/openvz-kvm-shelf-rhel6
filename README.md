@@ -1,5 +1,5 @@
-vzshelf-rhel6
-=============
+openvz-shelf-rhel6
+==================
 
 Test buildbooks printing
 
